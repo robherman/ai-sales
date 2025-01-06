@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/api/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/api",
+  "projects": {
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "chat": {
+      "type": "library",
+      "root": "libs/chat",
+      "entryFile": "index",
+      "sourceRoot": "libs/chat/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/chat/tsconfig.lib.json"
+      }
+    },
+    "config": {
+      "type": "library",
+      "root": "libs/config",
+      "entryFile": "index",
+      "sourceRoot": "libs/config/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config/tsconfig.lib.json"
+      }
+    },
+    "customers": {
+      "type": "library",
+      "root": "libs/customers",
+      "entryFile": "index",
+      "sourceRoot": "libs/customers/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/customers/tsconfig.lib.json"
+      }
+    },
+    "integrations": {
+      "type": "library",
+      "root": "libs/integrations",
+      "entryFile": "index",
+      "sourceRoot": "libs/integrations/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/integrations/tsconfig.lib.json"
+      }
+    },
+    "orders": {
+      "type": "library",
+      "root": "libs/orders",
+      "entryFile": "index",
+      "sourceRoot": "libs/orders/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/orders/tsconfig.lib.json"
+      }
+    },
+    "products": {
+      "type": "library",
+      "root": "libs/products",
+      "entryFile": "index",
+      "sourceRoot": "libs/products/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/products/tsconfig.lib.json"
+      }
+    },
+    "shared": {
+      "type": "library",
+      "root": "libs/shared",
+      "entryFile": "index",
+      "sourceRoot": "libs/shared/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/shared/tsconfig.lib.json"
+      }
+    },
+    "users": {
+      "type": "library",
+      "root": "libs/users",
+      "entryFile": "index",
+      "sourceRoot": "libs/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/users/tsconfig.lib.json"
+      }
+    },
+    "auth": {
+      "type": "library",
+      "root": "libs/auth",
+      "entryFile": "index",
+      "sourceRoot": "libs/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/auth/tsconfig.lib.json"
+      }
+    },
+    "tools": {
+      "type": "library",
+      "root": "libs/tools",
+      "entryFile": "index",
+      "sourceRoot": "libs/tools/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/tools/tsconfig.lib.json"
+      }
+    },
+    "recommendations": {
+      "type": "library",
+      "root": "libs/recommendations",
+      "entryFile": "index",
+      "sourceRoot": "libs/recommendations/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/recommendations/tsconfig.lib.json"
+      }
+    },
+    "chatbot": {
+      "type": "library",
+      "root": "libs/chatbot",
+      "entryFile": "index",
+      "sourceRoot": "libs/chatbot/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/chatbot/tsconfig.lib.json"
+      }
+    },
+    "ai-core": {
+      "type": "library",
+      "root": "libs/ai-core",
+      "entryFile": "index",
+      "sourceRoot": "libs/ai-core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/ai-core/tsconfig.lib.json"
+      }
+    },
+    "context-manager": {
+      "type": "library",
+      "root": "libs/context-manager",
+      "entryFile": "index",
+      "sourceRoot": "libs/context-manager/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/context-manager/tsconfig.lib.json"
+      }
+    },
+    "conversation": {
+      "type": "library",
+      "root": "libs/conversation",
+      "entryFile": "index",
+      "sourceRoot": "libs/conversation/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/conversation/tsconfig.lib.json"
+      }
+    },
+    "shopping-cart": {
+      "type": "library",
+      "root": "libs/shopping-cart",
+      "entryFile": "index",
+      "sourceRoot": "libs/shopping-cart/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/shopping-cart/tsconfig.lib.json"
+      }
+    },
+    "prompts": {
+      "type": "library",
+      "root": "libs/prompts",
+      "entryFile": "index",
+      "sourceRoot": "libs/prompts/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/prompts/tsconfig.lib.json"
+      }
+    },
+    "company": {
+      "type": "library",
+      "root": "libs/company",
+      "entryFile": "index",
+      "sourceRoot": "libs/company/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/company/tsconfig.lib.json"
+      }
+    },
+    "product-search": {
+      "type": "library",
+      "root": "libs/product-search",
+      "entryFile": "index",
+      "sourceRoot": "libs/product-search/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/product-search/tsconfig.lib.json"
+      }
+    }
+  }
+}
